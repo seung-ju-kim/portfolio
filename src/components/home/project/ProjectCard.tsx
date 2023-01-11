@@ -60,7 +60,7 @@ export default function ProjectCard({
           <h1 className='text-xl font-bold mb-3'>개발 내용</h1>
           <ul>
             {contents.map((content) => (
-              <li>{content}</li>
+              <li key={content}>{content}</li>
             ))}
           </ul>
         </article>
@@ -71,7 +71,7 @@ export default function ProjectCard({
           <h1 className='text-xl font-bold mb-3'>사용 기술 스택</h1>
           <ul className='flex flex-wrap'>
             {skills.map((skill, index, array) => (
-              <li className='mr-1'>
+              <li className='mr-1' key={skill}>
                 {skill}
                 {index !== array.length - 1 && ','}
               </li>
