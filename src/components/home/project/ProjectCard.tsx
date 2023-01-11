@@ -34,7 +34,12 @@ export default function ProjectCard({
         <Image src={image} width={100} height={100} alt={`${name} logo`} />
 
         {repository ? (
-          <a target='_blank' href={repository} className='underline mt-3 font-bold text-lg'>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href={repository}
+            className='underline mt-3 font-bold text-lg'
+          >
             {name}
           </a>
         ) : (
