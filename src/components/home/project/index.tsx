@@ -40,6 +40,7 @@ export default function Project() {
           period={PROJECT.JACKPOT.period}
           contents={PROJECT.JACKPOT.contents}
           skills={PROJECT.JACKPOT.skills}
+          repository={PROJECT.JACKPOT.repository}
         />
         <ProjectCard
           image={PROJECT.KRUGER.image}
@@ -49,6 +50,7 @@ export default function Project() {
           period={PROJECT.KRUGER.period}
           contents={PROJECT.KRUGER.contents}
           skills={PROJECT.KRUGER.skills}
+          repository={PROJECT.KRUGER.repository}
         />
       </main>
     </section>
