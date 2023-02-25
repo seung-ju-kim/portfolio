@@ -70,5 +70,5 @@ export const KRUGER = {
     '- MVP 개발 : Backend 팀원들이 전달해준 API를 통해 User들의 데이터를 관리하고 사용자 권한에 따라 다른 UI를 보여주도록 했습니다.',
   ],
   skills: ['React.js', 'React-Bootstrap', 'Figma', 'Node', 'Express', 'MONGODB'],
-  repository: 'https://github.com/seung-ju-kim/chorok',
+  repository: 'https://github.com/seung-ju-kim/kruger',
 };
