@@ -13,15 +13,17 @@ export default function Footer() {
           <a href={GITHUB_URL}>
             <Github width={50} height={50} fill='white' className='mx-3' />
           </a>
-          <a href={INSTAGRAM_URL}>
+          {/* <a href={INSTAGRAM_URL}>
             <Instagram width={50} height={50} fill='white' className='mx-3' />
-          </a>
+          </a> */}
+          {/* 
           <a href={VELOG_URL}>
             <Velog width={50} height={50} fill='white' className='mx-3' />
           </a>
+          */}
         </div>
         <div className='flex justify-center items-center mt-3'>
-          <span>© 2022. Kim Seung Ju. All rights reserved.</span>
+          <span>© 2022. Seung Ju Kim. All rights reserved.</span>
         </div>
       </nav>
     </footer>

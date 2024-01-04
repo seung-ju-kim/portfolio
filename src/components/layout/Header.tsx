@@ -2,10 +2,21 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {throttle} from 'lodash';
 
 import MenuButton from './assets/button_hamburger.svg';
+import {useRouter} from 'next/router';
+import useMoveScroll from 'hooks/useMoveScroll';
 
-export default function Header({moveTabs}: {moveTabs: MoveTabs[]}) {
+export default function Header({menuRefs}: {menuRefs: React.MutableRefObject<any>[]}) {
+  const router = useRouter();
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navbar, setNavbar] = useState(false);
+  const Tabs = ['ABOUT', 'SKILLS', 'PROJECT'];
+  const {scrollToTarget} = useMoveScroll(menuRefs);
+
+  const handleMenuClick = (index) => {
+    setNavbar(false);
+    // router.push(`#${menu}`);
+    scrollToTarget(index);
+  };
 
   const updateScroll = useMemo(
     () =>
@@ -18,7 +29,6 @@ export default function Header({moveTabs}: {moveTabs: MoveTabs[]}) {
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
   });
-
   return (
     <header
       className={`fixed w-full z-20 ease-in-out duration-500 delay-100 p-8 md:flex md:justify-between  ${
@@ -27,7 +37,7 @@ export default function Header({moveTabs}: {moveTabs: MoveTabs[]}) {
     >
       <div className='flex justify-between'>
         {/* Logo */}
-        <button onClick={moveTabs[0].onMoveToElement}>
+        <button>
           <h1
             className={`text-2xl font-bold ${
               scrollPosition < 100 ? 'hover:text-white' : 'hover:text-black'
@@ -50,18 +60,15 @@ export default function Header({moveTabs}: {moveTabs: MoveTabs[]}) {
           navbar ? 'block' : 'hidden'
         }`}
       >
-        {moveTabs.map((nav) => (
+        {Tabs.map((nav, index) => (
           <button
-            key={nav.name}
-            onClick={() => {
-              nav.onMoveToElement();
-              setNavbar(false);
-            }}
+            key={nav}
+            onClick={() => handleMenuClick(index)}
             className={`flex items-center gap-x-3 ${
               scrollPosition < 100 ? ' hover:text-white' : 'hover:text-black'
             } text-xl`}
           >
-            <span>{nav.name}</span>
+            <span>{nav}</span>
           </button>
         ))}
       </nav>

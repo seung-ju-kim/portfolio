@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import useMoveScroll from 'hooks/useMoveScroll';
+
 import Star from '../assets/Star.svg';
 import Frontend from './Frontend';
 import Backend from './Backend';
 import Database from './Database';
 import Certificate from './Certificate';
 import Communication from './Communication';
-
 import VersionControl from './VersionControl';
 import Deployment from './Deployment';
 
-const Skills = ({moveTabs}: {moveTabs: MoveTabs[]}) => {
+const Skills = () => {
   return (
     <section className='relative py-16 bg-[#d3f9d8] flex justify-center flex-col items-center h-full'>
       <header className='flex justify-center items-center mb-12'>
@@ -33,7 +34,7 @@ const Skills = ({moveTabs}: {moveTabs: MoveTabs[]}) => {
         </article>
       </main>
 
-      <footer className='absolute bottom-0 h-24' ref={moveTabs[3].element} />
+      <footer className='absolute bottom-0 h-24' />
     </section>
   );
 };

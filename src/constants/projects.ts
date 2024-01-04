@@ -1,3 +1,19 @@
+export const ART_BONBON = {
+  image: '/art_bonbon.jpeg',
+  name: '(주)아이스크림아트',
+  repository: 'https://bonbon.art/',
+  title: '세계 최초 실시간 온라인 미술 교육 플랫폼',
+  description:
+    '자사 서비스 프론트엔드, 자사 어드민 및 제휴사 관리 어드민 페이지를 개발하였습니다. 주로 테이블을  사용한 반응형 웹을 구현하였으며 실시간 데이터와 pre-fetching을 통한 외부 API 연동으로 데이터를 시각화 하는 작업을 진행했습니다. 또한 Github Actions를 통한 CI/CD 자동화로 빌드파일만 전송하여 용량을 아낄 수 있었습니다.',
+  period: '2022.08 ~ 2022.12',
+  contents: [
+    '- 로그인, 회원가입 등 사용자 관리 부분 담당 개발(Access Token + Refresh Token)',
+    '- 협업 효율성을 위한 공통 컴포넌트 분리(props, slot)',
+    '- 생산성을 높이기 위한 전역 상태관리(Vuex)',
+    '- 빠른 Data Fetching을 위해 Watch Query를 사용한 SSR',
+  ],
+  skills: ['Vue2', 'Nuxt2', 'Vuetify', 'Sass'],
+};
 export const IRONFLAG = {
   image: '/ironflag.png',
   name: '(주)아이언플래그',

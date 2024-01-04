@@ -11,7 +11,7 @@ const MY_INFO = [
   {Icon: Location, title: '주소지', content: '서울특별시 동대문구'},
 ];
 
-export default function About({moveTabs}: {moveTabs: MoveTabs[]}) {
+export default function About() {
   return (
     <section className='relative bg-white py-16 flex justify-center flex-col items-center h-full'>
       <header className='flex justify-center items-center mb-12'>
@@ -35,7 +35,7 @@ export default function About({moveTabs}: {moveTabs: MoveTabs[]}) {
         ))}
       </main>
 
-      <footer className='absolute bottom-0 h-24' ref={moveTabs[2].element} />
+      <footer className='absolute bottom-0 h-24' />
     </section>
   );
 }
