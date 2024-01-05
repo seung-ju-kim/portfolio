@@ -28,8 +28,8 @@ const useCursor = () => {
     requestAnimationFrame(frame);
 
     setStartPosition({
-      x: lerp(startPosition.x, cursorPosition.x, 0.3),
-      y: lerp(startPosition.y, cursorPosition.y, 0.3),
+      x: lerp(startPosition.x, cursorPosition.x, 0.2),
+      y: lerp(startPosition.y, cursorPosition.y, 0.2),
     });
 
     cursorRef.current.style.transform = `translate(${startPosition.x}px, ${startPosition.y}px)`;

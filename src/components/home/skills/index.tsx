@@ -9,16 +9,12 @@ import Certificate from './Certificate';
 import Communication from './Communication';
 import VersionControl from './VersionControl';
 import Deployment from './Deployment';
+import SectionTitle from 'components/common/SectionTitle';
 
 const Skills = () => {
   return (
     <section className='relative py-16 bg-[#d3f9d8] flex justify-center flex-col items-center h-full'>
-      <header className='flex justify-center items-center mb-12'>
-        <span className='mr-3'>
-          <Star width={'2.2rem'} height={'2.2rem'} />
-        </span>
-        <span className='text-3xl font-bold border-b-2 border-black'>SKILLS</span>
-      </header>
+      <SectionTitle title='Skills' />
 
       <main className='grid grid-cols-1 px-5  gap-x-10 gap-y-2 w-full lg:px-40 lg:grid-cols-2'>
         <article className='flex flex-col gap-y-2'>

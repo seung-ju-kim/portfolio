@@ -2,6 +2,7 @@ import React from 'react';
 import Star from '../assets/Star.svg';
 import ProjectCard from './ProjectCard';
 import * as PROJECT from 'constants/projects';
+import SectionTitle from 'components/common/SectionTitle';
 
 export default function Project() {
   const PROJECTS = [
@@ -57,12 +58,7 @@ export default function Project() {
   ];
   return (
     <section className='py-16 bg-[#f1f3f5] flex items-center justify-center flex-col'>
-      <header className='flex items-center mb-12'>
-        <span className='mr-3'>
-          <Star width={'2.2rem'} height={'2.2rem'} />
-        </span>
-        <span className='text-3xl font-bold border-b-2 border-black'>Project</span>
-      </header>
+      <SectionTitle title='Project' />
       <main className='flex flex-col gap-y-10 p-10'>
         {PROJECTS.map((project) => (
           <ProjectCard

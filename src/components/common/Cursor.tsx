@@ -11,10 +11,10 @@ export default function Cursor() {
       style={{
         display: 'none',
         position: 'fixed',
-        width: '20px',
-        height: '20px',
+        width: '10px',
+        height: '10px',
         borderRadius: '50%',
-        backgroundColor: 'black', // 커서의 색상을 원하는 대로 변경
+        backgroundColor: 'darkgray', // 커서의 색상을 원하는 대로 변경
         zIndex: 100,
         pointerEvents: 'none',
       }}

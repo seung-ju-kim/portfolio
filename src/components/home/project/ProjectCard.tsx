@@ -31,7 +31,13 @@ export default function ProjectCard({
       }}
     >
       <aside className='flex flex-col w-full lg:w-1/4 whitespace-nowrap justify-center items-center p-10 border-r  border-gray-300 '>
-        <Image src={image} width={100} height={100} alt={`${name} logo`} />
+        <Image
+          className='w-auto h-auto'
+          src={image}
+          width={100}
+          height={100}
+          alt={`${name} logo`}
+        />
         {repository ? (
           <a
             target='_blank'

@@ -10,7 +10,7 @@ const useScrollEvent = () => {
 
       if (node) {
         const rect = node.getBoundingClientRect();
-        const isVisible = rect.top <= window.innerHeight * 0.5; // 뷰포트의 50% 이상이 보이면 true
+        const isVisible = rect.top <= window.innerHeight * 0.7; // 뷰포트의 50% 이상이 보이면 true
 
         setIsVisible(isVisible);
       }

@@ -1,9 +1,9 @@
 import React from 'react';
-import Star from '../assets/Star.svg';
 import Call from '../assets/Call.svg';
 import Location from '../assets/Location.svg';
 import Mail from '../assets/Mail.svg';
 import User from '../assets/User.svg';
+import SectionTitle from 'components/common/SectionTitle';
 const MY_INFO = [
   {Icon: User, title: '이름', content: '김승주'},
   {Icon: Call, title: '연락처', content: '010-2514-4530'},
@@ -14,18 +14,12 @@ const MY_INFO = [
 export default function About() {
   return (
     <section className='relative bg-white py-16 flex justify-center flex-col items-center h-full'>
-      <header className='flex justify-center items-center mb-12'>
-        <span className='mr-3'>
-          <Star width={'2.2rem'} height={'2.2rem'} />
-        </span>
-        <span className='text-3xl font-bold border-b-2 border-black'>ABOUT ME</span>
-      </header>
-
+      <SectionTitle title='About Me' />
       <main className='flex flex-wrap gap-10 text-lg my-20'>
         {MY_INFO.map((myInfo) => (
           <article className='flex mx-auto w-60' key={myInfo.content}>
             <div className='mr-4'>
-              <myInfo.Icon width={'2rem'} height={'2rem'} />
+              <myInfo.Icon width={'3rem'} height={'3rem'} />
             </div>
             <div className='flex flex-col'>
               <span className='font-bold'>{myInfo.title}</span>

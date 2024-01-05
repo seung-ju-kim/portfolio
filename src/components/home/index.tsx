@@ -3,26 +3,45 @@ import About from './about';
 import Project from './project';
 import Introduce from './introduce';
 import Skills from './skills';
-import Header from 'components/layout/Header';
-import Footer from 'components/layout/Footer';
+import Header from 'components/common/Header';
+import Footer from 'components/common/Footer';
 import Cursor from 'components/common/Cursor';
 
 export default function Home() {
-  const menuRefs = [useRef(null), useRef(null), useRef(null)];
+  const menuRefs = [
+    {
+      ref: useRef(null),
+      name: 'header',
+    },
+    {
+      ref: useRef(null),
+      name: 'about',
+    },
+    {
+      ref: useRef(null),
+      name: 'skills',
+    },
+    {
+      ref: useRef(null),
+      name: 'project',
+    },
+  ];
   return (
     <>
       <Cursor />
-      <Header menuRefs={menuRefs} />
 
+      <div ref={menuRefs[0].ref}>
+        <Header menuRefs={menuRefs} />
+      </div>
       <main>
         <Introduce />
-        <div ref={menuRefs[0]}>
+        <div ref={menuRefs[1].ref}>
           <About />
         </div>
-        <div ref={menuRefs[1]}>
+        <div ref={menuRefs[2].ref}>
           <Skills />
         </div>
-        <div ref={menuRefs[2]}>
+        <div ref={menuRefs[3].ref}>
           <Project />
         </div>
       </main>
