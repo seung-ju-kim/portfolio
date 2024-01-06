@@ -1,14 +1,14 @@
 import React from 'react';
-import ProjectCard from '../../common/ProjectCard';
-import {PROJECTS} from 'constants/projects';
 import SectionTitle from 'components/common/SectionTitle';
+import ProjectCard from 'components/common/ProjectCard';
+import {CAREER} from 'constants/career';
 
-export default function Project() {
+export default function Career() {
   return (
-    <section className='py-16 bg-orange-100 flex items-center justify-center flex-col'>
-      <SectionTitle title='Project' />
+    <section className='py-16 bg-white flex items-center justify-center flex-col '>
+      <SectionTitle title='Career' />
       <main className='flex flex-col gap-y-10 p-10'>
-        {PROJECTS.map((project) => (
+        {CAREER.map((project) => (
           <ProjectCard
             key={project.name}
             image={project.image}
@@ -18,7 +18,6 @@ export default function Project() {
             period={project.period}
             contents={project.contents}
             skills={project.skills}
-            repository={project.repository}
           />
         ))}
       </main>

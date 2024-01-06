@@ -1,9 +1,0 @@
-.your-card {
-  opacity: 0;
-  transition: opacity 0.5s ease-in;
-  box-shadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px';
-}
-
-.your-card.visible {
-  opacity: 1;
-}

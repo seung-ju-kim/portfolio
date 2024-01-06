@@ -14,7 +14,7 @@ export default function Header({
 }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navbar, setNavbar] = useState(false);
-  const Tabs = ['About', 'Skills', 'Project'];
+  const Tabs = ['About', 'Skills', 'Career', 'Project'];
   const {scrollToTarget} = useMoveScroll(menuRefs);
 
   const handleMenuClick = (index) => {
@@ -58,7 +58,7 @@ export default function Header({
         {/* hamburger */}
         <div className='md:hidden'>
           <button className='rounded' onClick={() => setNavbar(!navbar)}>
-            <MenuButton width={'1.5rem'} height={'1.5rem'} />
+            <MenuButton width={'2rem'} height={'2rem'} />
           </button>
         </div>
       </div>

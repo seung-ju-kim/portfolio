@@ -1,7 +1,6 @@
 const useMoveScroll = (elements) => {
   const scrollToTarget = (index) => {
     const targetElement = elements[index].ref.current;
-    console.log(targetElement);
     if (targetElement) {
       const targetPosition = targetElement.offsetTop - 96;
       const startPosition = window.scrollY;

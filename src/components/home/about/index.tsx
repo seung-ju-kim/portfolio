@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section className='relative bg-white py-16 flex justify-center flex-col items-center h-full'>
       <SectionTitle title='About Me' />
-      <main className='flex flex-wrap gap-10 text-lg my-20'>
+      <main className='flex flex-wrap gap-10 text-xl my-20'>
         {MY_INFO.map((myInfo) => (
           <article className='flex mx-auto w-60' key={myInfo.content}>
             <div className='mr-4'>

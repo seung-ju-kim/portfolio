@@ -1,15 +1,7 @@
 import React, {useRef} from 'react';
-import useMoveScroll from 'hooks/useMoveScroll';
 
-import Star from '../assets/Star.svg';
-import Frontend from './Frontend';
-import Backend from './Backend';
-import Database from './Database';
-import Certificate from './Certificate';
-import Communication from './Communication';
-import VersionControl from './VersionControl';
-import Deployment from './Deployment';
 import SectionTitle from 'components/common/SectionTitle';
+import SkillCard from './SkillCard';
 
 const Skills = () => {
   return (
@@ -18,15 +10,15 @@ const Skills = () => {
 
       <main className='grid grid-cols-1 px-5  gap-x-10 gap-y-2 w-full lg:px-40 lg:grid-cols-2'>
         <article className='flex flex-col gap-y-2'>
-          <Frontend />
-          <Backend />
-          <Database />
+          <SkillCard title='FRONTEND' />
+          <SkillCard title='BACKEND' />
+          <SkillCard title='DATABASE' />
         </article>
         <article className='flex flex-col gap-y-2 '>
-          <Deployment />
-          <VersionControl />
-          <Communication />
-          <Certificate />
+          <SkillCard title='DEPLOYMENT' />
+          <SkillCard title='VERSION CONTROL' />
+          <SkillCard title='COMMUNICATION' />
+          <SkillCard title='CERTIFICATE' />
         </article>
       </main>
 

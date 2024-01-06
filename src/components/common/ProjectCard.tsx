@@ -19,12 +19,11 @@ export default function ProjectCard({
   description,
   period,
   contents,
-  skills,
   repository,
 }: ProjectCardProps) {
   return (
     <section
-      className='flex flex-col lg:flex-row bg-white rounded-xl w-full'
+      className='flex flex-col lg:flex-row bg-white rounded-xl w-full text-lg'
       style={{
         boxShadow:
           'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
@@ -65,20 +64,8 @@ export default function ProjectCard({
           <h1 className='text-xl font-bold mb-3'>개발 내용</h1>
           <ul>
             {contents.map((content) => (
-              <li key={content}>{content}</li>
-            ))}
-          </ul>
-        </article>
-
-        <hr className='my-3' />
-
-        <article>
-          <h1 className='text-xl font-bold mb-3'>사용 기술 스택</h1>
-          <ul className='flex flex-wrap'>
-            {skills.map((skill, index, array) => (
-              <li className='mr-1' key={skill}>
-                {skill}
-                {index !== array.length - 1 && ','}
+              <li className={`${!content.startsWith('-') && 'font-semibold'}`} key={content}>
+                {content || <br />}
               </li>
             ))}
           </ul>
