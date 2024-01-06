@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectCard from '../../common/ProjectCard';
+
+import ProjectCard from '../common/ProjectCard';
 import {PROJECTS} from 'constants/projects';
 import SectionTitle from 'components/common/SectionTitle';
 

@@ -1,37 +1,37 @@
-import HTML from 'components/home/assets/HTML.svg';
-import CSS from 'components/home/assets/CSS.svg';
-import JS from 'components/home/assets/JS.svg';
-import TS from 'components/home/assets/TS.svg';
-import SASS from 'components/home/assets/SASS.svg';
-import REACT from 'components/home/assets/REACT.svg';
-import NEXT from 'components/home/assets/NEXT.svg';
-import RECOIL from 'components/home/assets/RECOIL.svg';
-import BOOTSTRAP from 'components/home/assets/BOOTSTRAP.svg';
-import MUI from 'components/home/assets/MUI.svg';
+import HTML from 'components/home/assets/skills/HTML.svg';
+import CSS from 'components/home/assets/skills/CSS.svg';
+import JS from 'components/home/assets/skills/JS.svg';
+import TS from 'components/home/assets/skills/TS.svg';
+import SASS from 'components/home/assets/skills/SASS.svg';
+import REACT from 'components/home/assets/skills/REACT.svg';
+import NEXT from 'components/home/assets/skills/NEXT.svg';
+import RECOIL from 'components/home/assets/skills/RECOIL.svg';
+import BOOTSTRAP from 'components/home/assets/skills/BOOTSTRAP.svg';
+import MUI from 'components/home/assets/skills/MUI.svg';
 
-import PYTHON from 'components/home/assets/PYTHON.svg';
-import FIREBASE from 'components/home/assets/FIREBASE.svg';
-import NODE from 'components/home/assets/NODE.svg';
+import PYTHON from 'components/home/assets/skills/PYTHON.svg';
+import FIREBASE from 'components/home/assets/skills/FIREBASE.svg';
+import NODE from 'components/home/assets/skills/NODE.svg';
 
-import MONGODB from 'components/home/assets/MONGODB.svg';
-import MYSQL from 'components/home/assets/MYSQL.svg';
-import MARIADB from 'components/home/assets/MARIADB.svg';
-import POSTGRESQL from 'components/home/assets/POSTGRESQL.svg';
+import MONGODB from 'components/home/assets/skills/MONGODB.svg';
+import MYSQL from 'components/home/assets/skills/MYSQL.svg';
+import MARIADB from 'components/home/assets/skills/MARIADB.svg';
+import POSTGRESQL from 'components/home/assets/skills/POSTGRESQL.svg';
 
-import NETLIFY from 'components/home/assets/NETLIFY.svg';
-import VERCEL from 'components/home/assets/VERCEL.svg';
-import HEROKU from 'components/home/assets/HEROKU.svg';
-import LINUX from 'components/home/assets/LINUX.svg';
+import NETLIFY from 'components/home/assets/skills/NETLIFY.svg';
+import VERCEL from 'components/home/assets/skills/VERCEL.svg';
+import HEROKU from 'components/home/assets/skills/HEROKU.svg';
+import LINUX from 'components/home/assets/skills/LINUX.svg';
 
-import GIT from 'components/home/assets/GIT.svg';
-import GITHUB from 'components/home/assets/GITHUB.svg';
-import GITLAB from 'components/home/assets/GITLAB.svg';
+import GIT from 'components/home/assets/skills/GIT.svg';
+import GITHUB from 'components/home/assets/skills/GITHUB.svg';
+import GITLAB from 'components/home/assets/skills/GITLAB.svg';
 
-import NOTION from 'components/home/assets/NOTION.svg';
-import FIGMA from 'components/home/assets/FIGMA.svg';
-import SLACK from 'components/home/assets/SLACK.svg';
+import NOTION from 'components/home/assets/skills/NOTION.svg';
+import FIGMA from 'components/home/assets/skills/FIGMA.svg';
+import SLACK from 'components/home/assets/skills/SLACK.svg';
 
-import QNET from 'components/home/assets/QNET.svg';
+import QNET from 'components/home/assets/skills/QNET.svg';
 
 export const skills = [
   // FRONTEND

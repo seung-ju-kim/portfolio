@@ -1,7 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 
 import SectionTitle from 'components/common/SectionTitle';
-import SkillCard from './SkillCard';
+import SkillCard from '../common/SkillCard';
 
 const Skills = () => {
   return (

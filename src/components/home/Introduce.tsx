@@ -1,5 +1,6 @@
 import React from 'react';
-import ArrowDown from '../assets/ArrowDown.svg';
+
+import ArrowDown from 'components/home/assets/common/ArrowDown.svg';
 
 export default function Introduce() {
   return (

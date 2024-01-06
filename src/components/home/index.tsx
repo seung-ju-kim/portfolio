@@ -1,12 +1,12 @@
 import React, {useRef} from 'react';
 
-import Skills from 'components/home/skills';
-import About from 'components/home/about';
-import Project from 'components/home/project';
-import Introduce from 'components/home/introduce';
+import Skills from 'components/home/Skills';
+import About from 'components/home/About';
+import Project from 'components/home/Project';
+import Introduce from 'components/home/Introduce';
 import Header from 'components/common/Header';
 import Footer from 'components/common/Footer';
-import Career from 'components/home/career';
+import Career from 'components/home/Career';
 
 export default function Home() {
   const menuRefs = [

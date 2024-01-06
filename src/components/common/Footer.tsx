@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {GITHUB_URL} from 'constants/routes';
-import Github from './assets/github.svg';
+import Github from 'components/common/assets/github.svg';
 
 export default function Footer() {
   return (

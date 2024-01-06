@@ -53,7 +53,7 @@ export default function ProjectCard({
       <main className='p-10 w-full lg:w-3/4 text-gray-800'>
         <article>
           <h1 className='text-xl font-bold'>{title}</h1>
-          <small>기간: {period}</small>
+          <span>기간: {period}</span>
           <p className='my-5  break-all'>{description}</p>
         </article>
 

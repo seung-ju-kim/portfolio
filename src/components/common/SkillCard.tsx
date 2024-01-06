@@ -1,7 +1,8 @@
+import React from 'react';
+
 import {skills} from 'constants/skills';
 import useScrollEvent from 'hooks/useScrollEvent';
-import React, {useEffect, useRef, useState} from 'react';
-import styles from './card.module.scss';
+import styles from 'styles/card.module.scss';
 
 export default function SkillCard({title}: {title: string}) {
   const {ref, isVisible} = useScrollEvent();

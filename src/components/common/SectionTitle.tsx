@@ -1,5 +1,6 @@
 import React from 'react';
-import Star from 'components/home/assets/Star.svg';
+
+import Star from 'components/home/assets/common/Star.svg';
 
 const SectionTitle = ({title}: {title: string}) => {
   return (

@@ -1,17 +1,18 @@
 import React from 'react';
-import Call from '../assets/Call.svg';
-import Location from '../assets/Location.svg';
-import Mail from '../assets/Mail.svg';
-import User from '../assets/User.svg';
+
+import Call from 'components/home/assets/about/Call.svg';
+import Location from 'components/home/assets/about/Location.svg';
+import Mail from 'components/home/assets/about/Mail.svg';
+import User from 'components/home/assets/about/User.svg';
 import SectionTitle from 'components/common/SectionTitle';
-const MY_INFO = [
-  {Icon: User, title: '이름', content: '김승주'},
-  {Icon: Call, title: '연락처', content: '010-2514-4530'},
-  {Icon: Mail, title: '이메일', content: 'ksj961223@gmail.com'},
-  {Icon: Location, title: '주소지', content: '서울특별시 동대문구'},
-];
 
 export default function About() {
+  const MY_INFO = [
+    {Icon: User, title: '이름', content: '김승주'},
+    {Icon: Call, title: '연락처', content: '010-2514-4530'},
+    {Icon: Mail, title: '이메일', content: 'ksj961223@gmail.com'},
+    {Icon: Location, title: '주소지', content: '서울특별시 동대문구'},
+  ];
   return (
     <section className='relative bg-white py-16 flex justify-center flex-col items-center h-full'>
       <SectionTitle title='About Me' />
