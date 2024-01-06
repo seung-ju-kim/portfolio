@@ -17,7 +17,6 @@ export default function Project() {
             description={project.description}
             period={project.period}
             contents={project.contents}
-            skills={project.skills}
             repository={project.repository}
           />
         ))}

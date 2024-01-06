@@ -46,13 +46,7 @@ export default function Header({
       <div className='flex justify-between'>
         {/* Logo */}
         <button onClick={() => scrollToTarget(0)}>
-          <h1
-            className={`text-3xl font-bold ${
-              scrollPosition < 100 ? 'hover:text-white' : 'hover:text-black'
-            }`}
-          >
-            SEUNGJU
-          </h1>
+          <h1 className={`text-3xl font-bold hover:text-orange-200`}>SEUNGJU</h1>
         </button>
 
         {/* hamburger */}
@@ -72,9 +66,7 @@ export default function Header({
           <button
             key={nav}
             onClick={() => handleMenuClick(index + 1)}
-            className={`flex items-center gap-x-3 ${
-              scrollPosition < 100 ? ' hover:text-white' : 'hover:text-black'
-            } text-2xl`}
+            className={`flex items-center gap-x-3 hover:text-orange-200 text-2xl`}
           >
             <span>{nav}</span>
           </button>

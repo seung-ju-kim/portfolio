@@ -5,7 +5,7 @@ import SkillCard from './SkillCard';
 
 const Skills = () => {
   return (
-    <section className='relative py-16 bg-[#d3f9d8] flex justify-center flex-col items-center h-full'>
+    <section className='relative py-16 bg-orange-100 flex justify-center flex-col items-center h-full'>
       <SectionTitle title='Skills' />
 
       <main className='grid grid-cols-1 px-5  gap-x-10 gap-y-2 w-full lg:px-40 lg:grid-cols-2'>

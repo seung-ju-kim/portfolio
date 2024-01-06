@@ -8,7 +8,6 @@ interface ProjectCardProps {
   description: string;
   period: string;
   contents: string[];
-  skills: string[];
   repository?: string;
 }
 

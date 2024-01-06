@@ -5,7 +5,7 @@ import {CAREER} from 'constants/career';
 
 export default function Career() {
   return (
-    <section className='py-16 bg-white flex items-center justify-center flex-col '>
+    <section className='py-16  bg-white flex items-center justify-center flex-col '>
       <SectionTitle title='Career' />
       <main className='flex flex-col gap-y-10 p-10'>
         {CAREER.map((project) => (
@@ -17,7 +17,6 @@ export default function Career() {
             description={project.description}
             period={project.period}
             contents={project.contents}
-            skills={project.skills}
           />
         ))}
       </main>
