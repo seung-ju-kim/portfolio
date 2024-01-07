@@ -8,7 +8,7 @@ const SectionTitle = ({title}: {title: string}) => {
       <span className='mr-3'>
         <Star width={'3rem'} height={'3rem'} />
       </span>
-      <span className='text-5xl font-bold border-b-2 border-black'>{title}</span>
+      <span className='text-3xl lg:text-5xl font-bold border-b-2 border-black'>{title}</span>
     </header>
   );
 };

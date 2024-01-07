@@ -12,7 +12,7 @@ export default function Introduce() {
         </div>
 
         <hr className='border border-t-2 my-5 w-2/3 mx-auto' />
-        <div className='flex flex-col gap-3 text-2xl lg:text-3xl'>
+        <div className='flex flex-col gap-3 text-xl lg:text-3xl'>
           <span>안녕하세요 웹 개발자 김승주 입니다.</span>
           <span>새로운 기술들을 배우고 프로젝트에 적용하는 것을 좋아합니다.</span>
         </div>
