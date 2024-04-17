@@ -7,7 +7,10 @@ const ART_BONBON = {
   period: '2022.06 ~ 현재',
   contents: [
     'AI 디지털 교과서 - 학생 데이터 기반 맞춤 콘텐츠 제공하는 수학 AI 디지털 교과서 (2023.11 ~ 현재)',
-    '- 개발 진행중...',
+    '- 화면 메모(화이트 보드), PDF 뷰어 등 라이브러리 공통 모듈화(composable)',
+    '- Modal, Alert 등 전역 상태 관리(pinia)',
+    '- Composable 패턴을 사용하여 UI와 비즈니스 로직 분리',
+    '- 사용 기술 스택: Vue3, Nuxt3, Vuetify, SCSS',
     '',
     '아트봉봉 - 세계 최초 실시간 온라인 미술 교육 플랫폼 (2023.06 ~ 2023.11)',
     '- 로그인, 회원가입 등 사용자 관리 부분 담당 개발(Access Token + Refresh Token)',
