@@ -4,6 +4,7 @@ import JS from 'components/home/assets/skills/JS.svg';
 import TS from 'components/home/assets/skills/TS.svg';
 import SASS from 'components/home/assets/skills/SASS.svg';
 import REACT from 'components/home/assets/skills/REACT.svg';
+import VUE from 'components/home/assets/skills/VUE.svg';
 import NEXT from 'components/home/assets/skills/NEXT.svg';
 import RECOIL from 'components/home/assets/skills/RECOIL.svg';
 import BOOTSTRAP from 'components/home/assets/skills/BOOTSTRAP.svg';
@@ -64,6 +65,11 @@ export const skills = [
     type: 'FRONTEND',
     title: 'REACT',
     icon: REACT,
+  },
+  {
+    type: 'FRONTEND',
+    title: 'VUE',
+    icon: VUE,
   },
   {
     type: 'FRONTEND',
